@@ -29,9 +29,9 @@ def main():
         SimpleTreeGeocoder(samples=1000, data=areas_data),
         MemorizedTreeGeocoder(samples=1000, data=areas_data),
         SimpleTreeGeocoder(samples=10000, data=areas_data),
-        # SimpleTreeGeocoder(data=areas_data),
+        # SimpleTreeGeocoder(data=areas_data), отключил, иначе компухтер скажет "пока"
         MemorizedTreeGeocoder(samples=10000, data=areas_data),
-        MemorizedTreeGeocoder(data=areas_data),
+        # MemorizedTreeGeocoder(data=areas_data), отключил, иначе компухтер скажет "пока"
     ]
 
     for geocoder in geocoder_list:
